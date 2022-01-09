@@ -1,9 +1,11 @@
 @use "../functions" as *;
 @use "../variables" as *;
 .modal {
-    display: flex !important;
     // justify-content: center !important;
     // align-items: center !important;
+    @media (min-width: $device-md) {
+        display: flex !important;
+    }
 }
 
 .modal-content {
