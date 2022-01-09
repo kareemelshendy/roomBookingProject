@@ -97,9 +97,10 @@ export const AddRoomHOC = () => {
     }
     setImagesPreview([])
     setImages([])
-    // setTimeout(() => {
-    //   router.push("/preview")
-    // }, 2000)
+    
+    setTimeout(() => {
+      router.push("/preview")
+    }, 2000)
   }
 
   return (
