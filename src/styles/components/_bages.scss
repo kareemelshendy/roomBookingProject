@@ -1,0 +1,32 @@
+@use "../functions" as *;
+@use "../variables" as *;
+.badge {
+    padding: 2px 8px !important;
+    border-radius: 8px !important;
+    font-size: toRem(14) !important;
+    line-height: 25px !important;
+    font-weight: 400 !important;
+    i {
+        margin-left: 8px !important;
+    }
+}
+
+.badge-yellow {
+    background-color: $yellow !important;
+}
+
+.badge-input {
+    border: 1px solid $light !important;
+    color: $light-grey !important;
+}
+
+.input {
+    display: none;
+    &:checked+.label {
+        .badge-input {
+            background-color: $primary;
+            color: $white !important;
+            border-color: transparent;
+        }
+    }
+}

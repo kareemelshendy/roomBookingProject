@@ -1,0 +1,86 @@
+@use "../../styles/variables" as *;
+.card {
+    border-radius: 8px !important;
+    position: relative;
+    .heart {
+        position: absolute !important;
+        height: 20px;
+        width: 20px;
+        padding: 15px;
+        border-radius: 50%;
+        background-color: $white;
+        top: 8px;
+        left: 8px;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $light;
+        border: none;
+        cursor: pointer;
+        &_fav {
+            color: $fav;
+        }
+    }
+    .card_img {
+        height: 169px !important;
+        border-radius: 4px 4px 0px 0px !important;
+    }
+    .card_body {
+        padding: 32px 8px 16px 8px !important;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        color: $dark;
+        // .card_title {}
+        .location {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: $dark-grey;
+        }
+        .price,
+        .users {
+            padding: 8px 8px;
+            position: absolute;
+            background-color: $white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .price {
+            top: -15px;
+            right: 8px;
+            h5 {
+                margin-bottom: 0px;
+                font-weight: 700;
+                font-size: 14px;
+                color: $gold;
+            }
+        }
+        .users {
+            top: -15px;
+            right: 74px;
+            padding: 8px 8px;
+            color: $gold;
+            h5 {
+                font-size: 12px;
+                margin: 0 4px 0 0;
+                font-weight: 700;
+            }
+        }
+        .title {
+            line-height: 24px;
+            margin-bottom: 12px !important;
+        }
+        .card_text {
+            font-size: 12px;
+            line-height: 20px;
+            // color: $dark-grey;
+            margin: 0 4px 0 0 !important;
+        }
+    }
+}
